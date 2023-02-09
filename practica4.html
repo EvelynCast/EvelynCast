@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: rgb(58, 58, 53);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(255, 230, 0);
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(113, 210, 223);
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: aquamarine;
+            height: 300px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: beige;
+            padding: 10px;
+            text-align: center;
+            color: blueviolet;
+        }
+        @media(max-width: 600px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Twenty One Pilots & Pugs</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://youtu.be/nky4me4NP70">Tear in my heart</a></li>
+                <li><a href="https://youtu.be/8mn-FFjIbo8">My blood</a></li>
+                <li><a href="https://youtu.be/UOUBW8bkjQ4">Jumpsuit</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Lista de canciones</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam hic non reprehenderit neque nisi. Similique magnam non inventore iste beatae cum! Tenetur voluptatum sit deserunt voluptates voluptate! Porro, omnis ab!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate perferendis quidem iusto cum debitis unde fugiat mollitia iste, eos provident ipsum maiores sunt eaque, voluptas distinctio nihil consequatur eligendi quos?
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Mi banda favorita bla bla bla &copy; 2023</p>
+    </footer>
+
+    <div style="background-color: beige; border:2px solid white;">
+        Aumna:  Castro Samaniego Evelyn Melissa Práctica 4 Fecha: 08/02/2023 - &copy; 2023 - evelyn.castro21@cetis107.edu.mx
+    </div>
+</body>
+</html>

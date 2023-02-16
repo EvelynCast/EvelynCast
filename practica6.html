@@ -5,20 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegación en HTML</title>
+    <style>
+        .menu{
+            background-color: rgb(136, 169, 206);
+        }
+        .menu:hover{
+            background-color: rgb(255, 127, 170);
+        }
+        a{
+            color: rgb(40, 23, 56);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contenido{
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: rgb(187, 174, 233);">
     <h1 style="color: blue;">Navegación en HTML</h1> <hr>
-    <div style="border: 1px solid rgb(207, 88, 88)">
-        <div style="border-bottom: 1px solid rgb(207, 88, 88); padding: 15px;">
+    <h3>Página de inicio</h3>
+
+    <div style="border: 1px solid rgb(94, 119, 173)">
+        <div style="border-bottom: 1px solid rgb(94, 119, 173); padding: 15px;" class="menu">
             <a href="practica6_noticias.html">Noticias</a>
         </div>
-        <div style="border-bottom: 1px solid rgb(207, 88, 88); padding: 15px;">
-            <a href="practica6_galerias.html">Galería</a>
+        <div style="border-bottom: 1px solid rgb(94, 119, 173); padding: 15px;" class="menu">
+            <a href="practica6_galeria.html">Galería</a>
         </div>
-        <div style="border-bottom: 1px solid rgb(207, 88, 88); padding: 15px;">
+        <div style="border-bottom: 1px solid rgb(94, 119, 173); padding: 15px;" class="menu">
             <a href="practica6_contacto.html">Contacto</a>
         </div>
     </div>
+    <div style="border-radius: 10px;">
+    </div>
+    <div class="contenido">
+        <h3 style="color: rgb(40, 23, 56);">Bienvenido a m página</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ut dolor iure consectetur, numquam qui necessitatibus corrupti dolorum sed quidem voluptates laboriosam libero nemo provident ullam vitae soluta consequatur et!</p>
+    </div>
+
     
      <h3>Alumna: Castro Samaniego Evelyn Melissa Fecha:14/02/2023 - &copy; 2023 - evelyn.castro21@cetis107.edu.mx</h3>
 </body>

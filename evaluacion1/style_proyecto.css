@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.estilo{
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+.estilo_a{
+    background-color: rgb(118, 221, 164); 
+    padding: 10px;
+    border-radius: 15px;   
+}
+.inp{
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+    background-color: rgb(153, 134, 241); 
+    text-align: center;
+}
+.encuesta{
+    margin: auto;
+    width: 50%;
+    border-radius: 5%;
+    background-color: #F5A9F2;
+    text-align: center;
+}
+.div2{
+    border: 2px solid rgb(247, 127, 127);
+}
+.inicio{
+    width: 30%;
+    border: 5px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: bisque;
+}

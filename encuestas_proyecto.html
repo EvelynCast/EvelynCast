@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Encuestas</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style_proyecto.css">
+</head>
+<body>
+    <div class="inp"> <br>
+        <label for="nombre">Escribe el nombre de tu cantante favorito</label>
+        <input type="text" placeholder="" required> <br> <br>
+
+        <label for="nombre">Escribe el nombre de una canción</label>
+        <input type="text" placeholder="" required>  <br> <br>
+
+        <label for="feha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" required> <br> <br>
+    </div> <br>
+    
+    <div class="encuesta">
+        <h4>Encuesta</h4>
+        <p>¿Tocas algún instrumento?</p>
+        <input type="radio" required> No <br>
+        <input type="radio" required> Sí <br>
+        <input type="radio" required> Estoy aprendiendo <br> <hr>
+
+        <label for="materias">Canciones escuchadas:</label> <br> <br>
+        <input type="checkbox" name="canciones[]"> Lunchbox Friends <br>
+        <input type="checkbox" name="canciones[]"> Heavydirtysoul <br>
+        <input type="checkbox" name="canciones[]"> Play Date <br>
+        <input type="checkbox" name="canciones[]"> Car Radio <br>
+        <input type="checkbox" name="canciones[]"> Lonely Day <br> <hr>
+
+        <label for="cantante">¿Cantante preferido y por qué?</label> <br>
+        <textarea name="cantante" id="" cols="30" rows="5" placeholder="Teclea el nombre del cantante"></textarea>
+        <br><br>
+    </div> <hr>
+
+    <div class="inicio">
+        <a href="index.html">Regresar al inicio</a>
+    </div>
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

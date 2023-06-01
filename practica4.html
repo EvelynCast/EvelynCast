@@ -4,86 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layouts</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        header{
-            background-color: rgb(58, 58, 53);
-            padding: 30px;
-            text-align: center;
-            font-size: 35px;
-            color: rgb(255, 230, 0);
-        }
-        nav{
-            float: left;
-            width: 30%;
-            height: 300px;
-            background-color: rgb(113, 210, 223);
-            padding: 20px;
-        }
-        nav ul{
-            list-style-type: none;
-            padding: 0;
-        }
-        article{
-            float: left;
-            padding: 20px;
-            width: 70%;
-            background-color: aquamarine;
-            height: 300px;
-        }
-        section::after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-        footer{
-            background-color: beige;
-            padding: 10px;
-            text-align: center;
-            color: blueviolet;
-        }
-        @media(max-width: 600px){
-            nav, article{
-                width: 100%;
-                height: auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Examen de Twenty One Pilots</title>
 </head>
 <body>
-    <header>
-        <h2>Twenty One Pilots & Pugs</h2>
-    </header>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="https://youtu.be/nky4me4NP70">Tear in my heart</a></li>
-                <li><a href="https://youtu.be/8mn-FFjIbo8">My blood</a></li>
-                <li><a href="https://youtu.be/UOUBW8bkjQ4">Jumpsuit</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h1>Lista de canciones</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam hic non reprehenderit neque nisi. Similique magnam non inventore iste beatae cum! Tenetur voluptatum sit deserunt voluptates voluptate! Porro, omnis ab!
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate perferendis quidem iusto cum debitis unde fugiat mollitia iste, eos provident ipsum maiores sunt eaque, voluptas distinctio nihil consequatur eligendi quos?
-            </p>
-        </article>
-    </section>
-    <footer>
-        <p>Mi banda favorita bla bla bla &copy; 2023</p>
-    </footer>
-
-    <div style="background-color: beige; border:2px solid white;">
-        Aumna:  Castro Samaniego Evelyn Melissa Práctica 4 Fecha: 08/02/2023 - &copy; 2023 - evelyn.castro21@cetis107.edu.mx
+    <h1>Evaluación de Twenty One Pilots</h1>
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            Alumno: <input type="text" name="nombre" class="form-control" placeholder="Teclea tu nombre" required><br>
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #3D3A39;">
+                    1.- ¿Qué miembros de su familia están en la portada de "Vessel"?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="a"> a.  Sus abuelos
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="b"> b.  Sus padres
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="c"> c.  No son de su familia
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta1" value="d"> d.  Sus tíos
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #F8FEFE; color: black;">
+                    2.- ¿Qué prenda es un elemento básico de sus conciertos?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="a"> a.  Bufandas
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="b"> b.  Sombreros
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="c"> c.  Máscaras
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta2" value="d"> d.  Pañuelos
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #F9A4CB; color: black; ">
+                    3.- ¿De dónde son twenty one pilots?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="a"> a.  Columbus, Ohio
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="b"> b.  Dayton, Ohio
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="c"> c.  Cincinnati, Ohio
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta3" value="d"> d.  Cleveland, Ohio
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #93D1DE; color: black; ">
+                    4.- ¿Quién "inventó" el nombre de la banda?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="a"> a.  Chris Salih
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="b"> b.  Tyler Joseph
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="c"> c.  Josh Dun
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta4" value="d"> d.  Nick Thomas
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #DAD7CC; color: black; ">
+                    5.- ¿Qué instrumento tocaba Josh Dun en la escuela?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="a"> a.  Saxofón
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="b"> b.  Clarinete
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="c"> c.  Flauta
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta5" value="d"> d.  Trompeta
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #F6E518; color: black; ">
+                    6.- ¿Quién toca la guitarra en la banda?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="a"> a.  Tyler
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="b"> b.  Josh
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="c"> c.  Los dos
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta6" value="d"> d.  Ninguno
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #EC7E15; color: black; ">
+                    7.- ¿Quién es Jenna Black?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="a"> a.  La mamá de Tyler
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="b"> b.  La prometida de Josh
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="c"> c.  La tía de Josh
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta7" value="d"> d.  La mujer de Tyler
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #718DBC; color: black; ">
+                    8.- ¿Por qué fueron nominados en los Teen Choice Awards de 2015?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="a"> a.  Mejor canción con "Stressed Out"
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="b"> b.  Mejor canción con "Tear In My Heart"
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="c"> c.  Mejor grupo del verano
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta8" value="d"> d.  Mejor grupo masculino
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #3D3A39">
+                    9.- ¿Cuál es el color de pelo preferido de Josh?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="a"> a.  Verde
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="b"> b.  Rosado
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="c"> c.  Rojo
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta9" value="d"> d.  Púrpura
+                </li>
+              </ul><br>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true" style="background-color: #F8FEFE; color: black; ">
+                    10.- Tanto Josh como Tyler tienen un símbolo tatuado dedicado a sus fans, ¿cuál es?
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta10" value="a"> a.  =
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta10" value="b"> b.  +
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta10" value="c"> c.  *
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="pregunta10" value="d"> d.  X
+                </li>
+              </ul><br>
+              <div>
+                <input type="submit" class="btn btn-primary" value="Calificar">
+              </div>
+        </form>
     </div>
 </body>
 </html>

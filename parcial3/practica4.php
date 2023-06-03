@@ -47,6 +47,61 @@ if($pregunta3 == "a"){
     echo "<p>Respuesta es A</p>";
     echo "<img src='error.png' width='3%'><hr>";
 }
+
+echo "<h3>Pregunta 4, respuesta seleccionada: ".$pregunta4."</h3>";
+
+if($pregunta4 == "b"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es B</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+
+echo "<h3>Pregunta 5, respuesta seleccionada: ".$pregunta5."</h3>";
+
+if($pregunta5 == "d"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es D</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+if($pregunta6 == "d"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es D</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+if($pregunta7== "d"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es D</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+if($pregunta8 == "b"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es B</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+if($pregunta9 == "b"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es B</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
+if($pregunta10 == "d"){
+    $calificacion ++;
+    echo "<img src='correcta.png' width='3%'>";
+}else{
+    echo "<p>Respuesta es D</p>";
+    echo "<img src='error.png' width='3%'><hr>";
+}
 if($calificacion >= 0 && $calificacion <= 5){
     echo "<h3>Resultado: ".$calificacion."No aprobado (Se requiere estudiar :P)</h3>";
     echo "<img src='triste.png' width='5%'><hr>";

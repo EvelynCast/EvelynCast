@@ -28,7 +28,8 @@
     ?>
      <div class="container">
         <h1>Práctica 7 - Tablero de serpientes y escaleras</h1><hr>
-            <form action="">
+            <form action="practica7.php" method="POST">
+                <input type="submit" value="Jugar" class="btn btn-sucess" style="background-color: #97ffff"><hr>
                 <div class="row">
                 <?php
                     for($i=100; $i>0; $i--){
